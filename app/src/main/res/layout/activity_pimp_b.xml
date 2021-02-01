@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".Pimp_b">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="1.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1.6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/backPimpB"
+                    android:layout_gravity="center"
+                    android:background="@drawable/backdewan"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="85dp"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000000"
+                    android:text="Data Dewan"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+
+            <ImageView
+                android:background="@drawable/picpimb"
+                android:layout_width="168dp"
+                android:layout_height="193dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/pimpbnama"
+            android:layout_width="350dp"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/pimpbjab"
+            android:layout_width="350dp"
+            android:layout_height="40dp"/>
+
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/pimpbpdd"
+            android:layout_width="350dp"
+            android:layout_height="40dp"/>
+
+
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/pimpbpartai"
+            android:layout_width="360dp"
+            android:layout_height="50dp"/>
+
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/pimpbkomisi"
+            android:layout_width="350dp"
+            android:layout_height="40dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

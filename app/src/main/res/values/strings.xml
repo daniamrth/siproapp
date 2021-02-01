@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">sipro</string>
+    <!-- Strings used for fragments for navigation -->
+
+
+    <string name="lupapassword">
+        <a href="https://www.google.com">Lupa Password?</a>
+    </string>
+
+    <string name="jammasuk">Jam Masuk</string>
+
+    <string name="jamkeluar">Jam Keluar</string>
+
+
+</resources>

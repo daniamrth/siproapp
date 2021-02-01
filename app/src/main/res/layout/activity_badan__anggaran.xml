@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Badan_Anggaran">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jabatan"/>
+                />
+        </TableRow>
+
+<!--    BARIS KE2    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H. Abdul Hadi, S.Ag, M.I.Kom"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ketua DPRD"/>
+        </TableRow>
+
+        <!--    BARIS KE3    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syabirin, SE"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wakil Ketua DPRD"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE4    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M. Noor Iswan, S. Pd"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wakil Ketua DPRD"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE5    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H. Sutikno, AP, M.AP"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekretaris Bukan Anggota"/>
+        </TableRow>
+
+        <!--    BARIS KE6    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hj. Sri Huriati"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE7    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syahbuddin, S. Sos, MM"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE8    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elry Satriana, SE, S.Sos"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE9    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syaifullah"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE10    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H. M. Husairi, SE"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE11    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M. Rizkan, S.Sos, M.A"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE12    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H. Rusdi HSY, SE"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE13    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Istiqamah"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE14    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sahmadi"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE15    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siprinsyah"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+        <!--    BARIS KE16    -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fakhruddin Misran, SE"/>
+
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anggota"/>
+            />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

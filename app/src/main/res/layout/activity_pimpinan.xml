@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8ED2BF"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Pimpinan">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="1.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1.6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/backPimpinan"
+                android:layout_gravity="center"
+                android:background="@drawable/btback"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingRight="85dp"
+            android:gravity="center"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:textColor="#FFFFFF"
+                android:text="Pimpinan"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:background="@drawable/pimpa"
+            android:id="@+id/pimp1"
+            android:layout_width="340dp"
+            android:layout_height="185dp"/>
+
+        <Button
+            android:background="@drawable/pimpb"
+            android:id="@+id/pimp2"
+            android:layout_width="340dp"
+            android:layout_height="185dp"/>
+
+        <Button
+            android:background="@drawable/pimpc"
+            android:id="@+id/pimp3"
+            android:layout_width="340dp"
+            android:layout_height="185dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
