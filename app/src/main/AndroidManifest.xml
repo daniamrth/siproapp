@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+    package="com.sipro.mysipro">
 
     <application
         android:usesCleartextTraffic="true"
@@ -10,37 +10,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Test_jadwal"></activity>
-        <activity android:name=".Test" />
-        <activity android:name=".Akd_Kehormatan" />
-        <activity android:name=".Akd_Legislasi" />
-        <activity android:name=".Akd_Musyawarah" />
-        <activity android:name=".Badan_Anggaran" />
-        <activity android:name=".Pimp_c" />
-        <activity android:name=".Pimp_b" />
-        <activity android:name=".Pimp_a" />
-        <activity android:name=".Akd_Anggaran" />
-        <activity android:name=".Pimpinan" />
-        <activity android:name=".InputTest" />
-        <activity android:name=".Profil" />
-        <activity android:name=".Absensi" />
-        <activity android:name=".SplashScreen">
+        <activity android:name="com.sipro.mysipro.Test_jadwal"></activity>
+        <activity android:name="com.sipro.mysipro.Test" />
+        <activity android:name="com.sipro.mysipro.Akd_Kehormatan" />
+        <activity android:name="com.sipro.mysipro.Akd_Legislasi" />
+        <activity android:name="com.sipro.mysipro.Akd_Musyawarah" />
+        <activity android:name="com.sipro.mysipro.Badan_Anggaran" />
+        <activity android:name="com.sipro.mysipro.Pimp_c" />
+        <activity android:name="com.sipro.mysipro.Pimp_b" />
+        <activity android:name="com.sipro.mysipro.Pimp_a" />
+        <activity android:name="com.sipro.mysipro.Akd_Anggaran" />
+        <activity android:name="com.sipro.mysipro.Pimpinan" />
+        <activity android:name="com.sipro.mysipro.InputTest" />
+        <activity android:name="com.sipro.mysipro.Profil" />
+        <activity android:name="com.sipro.mysipro.Absensi" />
+        <activity android:name="com.sipro.mysipro.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".Kehadiran" />
-        <activity android:name=".Presensi" />
-        <activity android:name=".Jadwal" />
-        <activity android:name=".Data" />
-        <activity android:name=".Beranda" />
+        <activity android:name="com.sipro.mysipro.Login" />
+        <activity android:name="com.sipro.mysipro.Kehadiran" />
+        <activity android:name="com.sipro.mysipro.Presensi" />
+        <activity android:name="com.sipro.mysipro.Jadwal" />
+        <activity android:name="com.sipro.mysipro.Data" />
+        <activity android:name="com.sipro.mysipro.Beranda" />
 
 
         <service
-            android:name=".fcm.FirebaseMessageReceiver"
+            android:name="com.sipro.mysipro.fcm.FirebaseMessageReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

@@ -73,7 +73,7 @@
                 android:id="@+id/jam"
                 android:textColor="@android:color/white"
                 android:textSize="50dp"
-                android:format24Hour="hh : mm"
+                android:format24Hour="HH : mm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </LinearLayout>
