@@ -3,6 +3,7 @@ package com.sipro.mysipro;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 
 import org.json.JSONObject;
@@ -10,7 +11,9 @@ import org.json.JSONObject;
 
 //import android.support.annotation.NonNull;
 //import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,10 +44,39 @@ public class Login extends Activity {
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
+    private void saveToken(String newToken) {
+        //SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("LoginToken", newToken);
+        editor.apply();
+    }
+
+    private boolean checkToken() {
+        //SharedPreferences sharedPref = getApplicationContext().getSharedPreferences();
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+
+       if (sharedPref.contains("LoginToken"))
+       {
+
+           String jwt = sharedPref.getString("LoginToken", "");
+           Log.d ("param1", "token"+jwt);
+           GlobalVar.jwt_token = jwt;
+
+       }
+        return sharedPref.contains("LoginToken");
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        if (checkToken()) {
+            Intent i = new Intent(Login.this, Beranda.class);
+            startActivity(i);
+        }
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
@@ -127,6 +159,8 @@ public class Login extends Activity {
                             String jwt = response.getJSONObject("data").getString("access_token");
                             your_JWT_Token = jwt;
                             GlobalVar.jwt_token = jwt;
+                            saveToken(jwt);
+
 
                            // Toast.makeText(Login.this, your_JWT_Token, Toast.LENGTH_SHORT).show();
                             Toast.makeText(Login.this, "Berhasil login", Toast.LENGTH_SHORT).show();

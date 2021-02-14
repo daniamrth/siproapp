@@ -1,7 +1,9 @@
 package com.sipro.mysipro;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -37,11 +39,35 @@ public class Beranda extends Activity {
 //    private Button btLoad, btBackJadwal;
 
 
-
     private static int WELCOME_TIMEOUT = 850;
     Button btlogin, btdata, btjadwal, btpresensi, btkehadiran, btlogout;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
+
+
+    private void delToken(){
+       //SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.remove("LoginToken");
+        editor.remove("logMasuk");
+        editor.remove("logKeluar");
+        editor.apply();
+
+
+    }
+
+    private boolean checkToken() {
+        //SharedPreferences sharedPref = getApplicationContext().getSharedPreferences();
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+
+        if (!sharedPref.contains("LoginToken"))
+        {
+            Intent inToLogin = new Intent(Beranda.this, Login.class);
+            startActivity(inToLogin);
+        }
+        return sharedPref.contains("LoginToken");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,17 +77,19 @@ public class Beranda extends Activity {
 //        get_Jadwal_Beranda();
 
         setUpFcmToken();
+        checkToken();
 
 
         btlogout = findViewById(R.id.logout);
         btlogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
+                //FirebaseAuth.getInstance().signOut();
+                delToken();
+
+               // finish();
                 Intent inToLogin = new Intent(Beranda.this, Login.class);
                 startActivity(inToLogin);
-
-
             }
         });
 
@@ -149,6 +177,9 @@ public class Beranda extends Activity {
             @Override
             public void onSuccess(InstanceIdResult instanceIdResult) {
                 final String newToken = instanceIdResult.getToken();
+
+
+
 //                Log.e("newToken", newToken);
 
 

@@ -3,7 +3,9 @@ package com.sipro.mysipro;
 import android.app.Activity;
 //import android.support.v7.app.AppCompatActivity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,11 +44,39 @@ public class Kehadiran extends Activity  {
 
     TextView txMm, txYy;
 
+    private void saveKehadiran(String key, String status) {
+        //SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(key, status);
+        editor.apply();
+    }
+
+    private String getKehadiran(String key){
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+
+        if (sharedPref.contains(key))
+        {
+
+            String status = sharedPref.getString(key, "");
+            Log.d ("param1", "token"+status);
+            return status;
+        }
+
+        return null;
+    }
+
+    private boolean getLog(String key) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("APPS", Context.MODE_PRIVATE);
+        return sharedPref.contains(key);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kehadiran);
+
 
         txMm = findViewById(R.id.tMm);
         txYy = findViewById(R.id.tYy);
@@ -68,6 +98,25 @@ public class Kehadiran extends Activity  {
 
         btIn = (Button) findViewById(R.id.in);
         btOut = (Button) findViewById(R.id.out);
+        tampilClockIn=(TextView)  findViewById(R.id.showClockIn);
+        tampilClockOut=(TextView) findViewById(R.id.showClockOut);
+
+
+
+
+        if (getLog("logMasuk")) {
+            tampilClockIn.setText(getKehadiran("logMasuk"));
+        }
+
+        if (getLog("logKeluar")) {
+            tampilClockOut.setText(getKehadiran("logKeluar"));
+        }
+
+        if ("masuk".equals(getKehadiran("statusKehadiran"))) {
+            btIn.setEnabled(false);
+        } else {
+            btOut.setEnabled(false);
+        }
 
 
 //        mInputData = (EditText) findViewById(R.id.inputData);
@@ -85,8 +134,7 @@ public class Kehadiran extends Activity  {
 
         waktu =(TextView) findViewById(R.id.time);
         tanggalIn = (TextView) findViewById(R.id.tanggal);
-        tampilClockIn=(TextView)  findViewById(R.id.showClockIn);
-        tampilClockOut=(TextView) findViewById(R.id.showClockOut);
+
         attTypeCi = (TextView) findViewById(R.id.att_type_in);
         attTypeCo = (TextView) findViewById(R.id.att_type_out);
 
@@ -117,10 +165,16 @@ public class Kehadiran extends Activity  {
 
 
                 inputJamMasuk(fd,time1,"4321","4321");
-                tampilClockIn.setText(inputWaktuCi+"                                                      Jam Masuk");
+                String logMasuk = inputWaktuCi+"                                                      Jam Masuk";
+                saveKehadiran("logMasuk", logMasuk);
+                tampilClockIn.setText(logMasuk);
+
+
 
                 btIn.setEnabled(false);
                 btOut.setEnabled(true);
+
+                saveKehadiran("statusKehadiran", "masuk");
 
             }
 
@@ -148,11 +202,15 @@ public class Kehadiran extends Activity  {
                 String fulldo = txMm.getText().toString();
 
                 inputJamKeluar(fdo,time2,"4321","4321");
+                String logKeluar = inputWaktuCo+"                                                      Jam Keluar";
+                saveKehadiran("logKeluar", logKeluar);
+                tampilClockOut.setText(logKeluar);
 
-                tampilClockOut.setText(inputWaktuCo+"                                                      Jam Keluar");
 
                 btOut.setEnabled(false);
                 btIn.setEnabled(true);
+
+                saveKehadiran("statusKehadiran", "keluar");
 
             }
         });
