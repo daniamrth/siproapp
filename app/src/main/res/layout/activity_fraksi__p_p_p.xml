@@ -2,12 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:weightSum="2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="2"
     android:background="#8ED2BF"
-    tools:context=".Akd_Kehormatan">
+    android:orientation="vertical"
+    tools:context=".Fraksi_PPP">
+
+
 
     <LinearLayout
         android:weightSum="2"
@@ -22,7 +24,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/backBadKeh"
+                android:id="@+id/backppp"
                 android:layout_gravity="center"
                 android:background="@drawable/btback"
                 android:layout_width="25dp"
@@ -32,6 +34,7 @@
 
 
         <LinearLayout
+            android:orientation="vertical"
             android:paddingRight="85dp"
             android:gravity="center"
             android:layout_weight="0.4"
@@ -42,7 +45,16 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/roboto"
                 android:textColor="#FFFFFF"
-                android:text="Badan Kehormatan"
+                android:text="Fraksi Partai"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:textColor="#FFFFFF"
+                android:text="Persatuan Pembangunan"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -90,7 +102,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Ahmad Yani"/>
+                                android:text="Hj. Sri Huriyati"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -114,7 +126,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mulyadi"/>
+                                android:text="M. Ifdali, S.Sos"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -140,9 +152,57 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:text="Dimas Royandie, ST"/>
+
+                            <TextView
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sekertaris"/>
+                            />
+                        </TableRow>
+
+                        <!--    BARIS KE5    -->
+                        <TableRow>
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:text="Supianor"/>
 
                             <TextView
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                        </TableRow>
+
+                        <!--    BARIS KE6    -->
+                        <TableRow
+                            android:background="#F8F9FA"
+                            >
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lindawati, S.Sos"/>
+
+                            <TextView
+                                android:paddingTop="10dp"
                                 android:paddingRight="8dp"
                                 android:textColor="#000000"
                                 android:gravity="right"

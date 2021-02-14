@@ -90,7 +90,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Abdul Hadi, S.Ag, M.I.Kom"/>
+                                android:text="Ahsani Fauzan, SE"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -114,7 +114,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Syabirin, SE"/>
+                                android:text="M. Ifdali, S.Sos"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -140,7 +140,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="M. Noor Iswan, S. Pd"/>
+                                android:text="Sekertaris"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -149,7 +149,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Wakil Ketua DPRD"/>
+                                android:text="Sekertaris"/>
                             />
                         </TableRow>
 
@@ -163,7 +163,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Sutikno, AP, M.AP"/>
+                                android:text="Abi Yani"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -172,7 +172,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Sekretaris"/>
+                                android:text="Anggota"/>
                         </TableRow>
 
                         <!--    BARIS KE6    -->
@@ -187,7 +187,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Eduarny Tarmidji, SE, M.Fil"/>
+                                android:text="Nur Fariani"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -211,7 +211,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Dimas Royandie, ST"/>
+                                android:text="Bahrul Ilmi"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -237,7 +237,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Dadang Idi Fajeri, S.Sos, MM"/>
+                                android:text="Dimas Royandie, ST"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -260,7 +260,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. M. Ali Fahmi, ST"/>
+                                android:text="Lindawati, S.Sos"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -286,7 +286,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Syarifuddin A"/>
+                                android:text="Ahmad Fauzi, S.Hut"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -310,7 +310,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Rusdiansayah"/>
+                                android:text="H. Usman M"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -336,7 +336,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Zainal R, S.Pd"/>
+                                android:text="Hafis Ansyari, S.Pd"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -360,7 +360,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Sudarto D"/>
+                                android:text="Agus Reyanto"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -386,7 +386,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Abdul Kahhar"/>
+                                android:text="Rusdin Barhiwan"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -410,7 +410,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Drs. Nasruddin"/>
+                                android:text="Saifullah"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -426,7 +426,7 @@
 
                         <!--    BARIS KE16    -->
                         <TableRow
-                            android:background="#F8F9FA"
+                            android:background="#FFFFFF"
                             >
                             <TextView
                                 android:paddingTop="10dp"
@@ -436,7 +436,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Atim, S.Pd, MM"/>
+                                android:text=""/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -446,7 +446,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Anggota"/>
+                                android:text=""/>
                             />
                         </TableRow>
 

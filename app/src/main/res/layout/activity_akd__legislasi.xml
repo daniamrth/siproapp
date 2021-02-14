@@ -32,6 +32,7 @@
 
 
         <LinearLayout
+            android:orientation="vertical"
             android:paddingRight="85dp"
             android:gravity="center"
             android:layout_weight="0.4"
@@ -42,7 +43,16 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/roboto"
                 android:textColor="#FFFFFF"
-                android:text="Badan Legislasi"
+                android:text="Badan Pembentukan"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:textColor="#FFFFFF"
+                android:text="Peraturan Daerah"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -114,7 +124,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Dadang Idi Fajeri, S. Sos, MM"/>
+                                android:text="Hanil Tamjid"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -123,7 +133,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Wakil Ketua I"/>
+                                android:text="Wakil Ketua"/>
                             />
                         </TableRow>
 
@@ -140,7 +150,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Rusdy HSY, SE"/>
+                                android:text="Sekertaris"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -149,7 +159,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Wakil Ketua II"/>
+                                android:text="Sekertaris"/>
                             />
                         </TableRow>
 
@@ -163,7 +173,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Sutikno, AP, M.AP"/>
+                                android:text="H. Dadang Idi Fajeri, S.Sos., MM"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -172,7 +182,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Sekretaris"/>
+                                android:text="Anggota"/>
                         </TableRow>
 
                         <!--    BARIS KE6    -->
@@ -211,7 +221,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Erly Satruana, SE, S"/>
+                                android:text="H. Rusdi Hsy, SE"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -222,6 +232,78 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Anggota"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:background="#F8F9FA"
+                            >
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Abi Yani"/>
+
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                            />
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rusdin Barhiwan"/>
+
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:background="#F8F9FA"
+                            >
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Supianor"/>
+
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                            />
                         </TableRow>
 
                     </TableLayout>

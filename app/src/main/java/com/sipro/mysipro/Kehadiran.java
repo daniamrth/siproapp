@@ -35,7 +35,6 @@ import java.util.Map;
 
 public class Kehadiran extends Activity  {
 
-
     ProgressDialog pd;
     String your_JWT_Token="";
 
@@ -57,7 +56,6 @@ public class Kehadiran extends Activity  {
 
         if (sharedPref.contains(key))
         {
-
             String status = sharedPref.getString(key, "");
             Log.d ("param1", "token"+status);
             return status;
@@ -77,11 +75,8 @@ public class Kehadiran extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kehadiran);
 
-
         txMm = findViewById(R.id.tMm);
         txYy = findViewById(R.id.tYy);
-
-
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
         String date = sdf.format(new Date());
@@ -92,7 +87,6 @@ public class Kehadiran extends Activity  {
         Date currentTime = Calendar.getInstance().getTime();
         String formattedDate = DateFormat.getDateInstance(DateFormat.FULL).format(currentTime);
 
-
         TextView textView1 = findViewById(R.id.tanggal);
         textView1.setText(formattedDate);
 
@@ -100,9 +94,6 @@ public class Kehadiran extends Activity  {
         btOut = (Button) findViewById(R.id.out);
         tampilClockIn=(TextView)  findViewById(R.id.showClockIn);
         tampilClockOut=(TextView) findViewById(R.id.showClockOut);
-
-
-
 
         if (getLog("logMasuk")) {
             tampilClockIn.setText(getKehadiran("logMasuk"));
@@ -131,14 +122,10 @@ public class Kehadiran extends Activity  {
             }
         });
 
-
         waktu =(TextView) findViewById(R.id.time);
         tanggalIn = (TextView) findViewById(R.id.tanggal);
-
         attTypeCi = (TextView) findViewById(R.id.att_type_in);
         attTypeCo = (TextView) findViewById(R.id.att_type_out);
-
-
 
         //clock in
         btIn.setOnClickListener(new View.OnClickListener() {
@@ -151,7 +138,6 @@ public class Kehadiran extends Activity  {
                 txYy.setText(fd);
                 Log.d("param1","tanggal"+fd);
 
-
                 //get time
                 Calendar calendar = Calendar.getInstance();
                 SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
@@ -163,19 +149,15 @@ public class Kehadiran extends Activity  {
                 String inputWaktuCi = textView.getText().toString();
                 String fulld = txYy.getText().toString();
 
-
                 inputJamMasuk(fd,time1,"4321","4321");
                 String logMasuk = inputWaktuCi+"                                                      Jam Masuk";
                 saveKehadiran("logMasuk", logMasuk);
                 tampilClockIn.setText(logMasuk);
 
-
-
                 btIn.setEnabled(false);
                 btOut.setEnabled(true);
 
                 saveKehadiran("statusKehadiran", "masuk");
-
             }
 
         });
@@ -205,7 +187,6 @@ public class Kehadiran extends Activity  {
                 String logKeluar = inputWaktuCo+"                                                      Jam Keluar";
                 saveKehadiran("logKeluar", logKeluar);
                 tampilClockOut.setText(logKeluar);
-
 
                 btOut.setEnabled(false);
                 btIn.setEnabled(true);

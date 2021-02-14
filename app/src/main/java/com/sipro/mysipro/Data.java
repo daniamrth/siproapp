@@ -38,8 +38,7 @@ public class Data extends Activity {
                 "Pimpinan",
                 "Fraksi",
                 "Komisi",
-                "Alat Kelengkapan Dewan",
-                "Partai"
+                "Alat Kelengkapan Dewan"
 
         };
 
@@ -50,11 +49,12 @@ public class Data extends Activity {
         };
 
         final String isiFraksi[] = {
-                "Fraksi Amanta Sanggam",
-                "Fraksi Gabungan Perubahan",
-                "Fraksi Golongan Karya",
-                "Fraksi PKS",
-                "Fraksi PPP"
+                "Fraksi Partai Golongan Karya",
+                "Fraksi Partai Persatuan Pembangunan",
+                "Fraksi Partai Demokrasi Indonesia Perjuangan",
+                "Fraksi Nasional Demokrat",
+                "Fraksi Indonesia Raya Keadilan Sejahtera",
+                "Fraksi Amanat Bintang Demokrasi"
         };
 
 
@@ -69,24 +69,24 @@ public class Data extends Activity {
         final String isiAkd[] = {
                 "Badan Anggaran",
                 "Badan Musyawarah",
-                "Badan Legilasi",
+                "Badan Pemperda",
                 "Badan Kehormatan"
         };
 
-        final String isiPartai[] = {
-                "Partai Amanat Nasional",
-                "Partai Bulan Bintang",
-                "Partai Demokrasi Indonesia Perjuangani",
-                "Partai Gerindra",
-                "Partai Golongan Karya",
-                "Partai Hanura",
-                "Partai Keadilan Sejahtera",
-                "Partai Kebangkitan Bangsa",
-                "Partai Nasional Demokrat",
-                "Partai Persatuan Pembangunan"
-
-
-        };
+//        final String isiPartai[] = {
+//                "Partai Amanat Nasional",
+//                "Partai Bulan Bintang",
+//                "Partai Demokrasi Indonesia Perjuangani",
+//                "Partai Gerindra",
+//                "Partai Golongan Karya",
+//                "Partai Hanura",
+//                "Partai Keadilan Sejahtera",
+//                "Partai Kebangkitan Bangsa",
+//                "Partai Nasional Demokrat",
+//                "Partai Persatuan Pembangunan"
+//
+//
+//        };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item, isiDivisi);
         spDivisi.setAdapter(adapter);
@@ -135,144 +135,159 @@ public class Data extends Activity {
 
                 /*Sub divisi fraksi*/
                 if (position == 1) {
-                    ArrayAdapter<String> adapter2= new ArrayAdapter<String>(Data.this, R.layout.spinner_item, isiFraksi);
+                    ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(Data.this, R.layout.spinner_item, isiFraksi);
                     spSubDivisi.setAdapter(adapter2);
-//                    spSubDivisi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//                        @Override
-//                        public void onItemSelected(AdapterView<?> parent, View view, int i, long id) {
-//                            switch (i) {
-//
-//                                /*Fraksi Amanta Sanggam*/
-//                                case 0:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent2 = new Intent(Data.this, MainActivity.class);
-//                                            startActivity(intent2);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//                                /*Fraksi Gabungan Perubahan*/
-//                                case 1:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent3 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent3);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//
-//                                /*Fraksi Golongan Karya*/
-//                                case 2:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent4 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent4);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//                                /*Fraksi PKS*/
-//                                case 3:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent5 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent5);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//                                /*Fraksi PPP*/
-//                                case 4:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent6 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent6);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//                            }
-//                        }
-//
-//                        @Override
-//                        public void onNothingSelected(AdapterView<?> parent) { }
-//                    });
+                    spSubDivisi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                        @Override
+                        public void onItemSelected(AdapterView<?> parent, View view, int i, long id) {
+                            switch (i) {
+
+                                /*Fraksi Partai Golkar*/
+                                case 0:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent2 = new Intent(Data.this, Fraksi_Golkar.class);
+                                            startActivity(intent2);
+                                        }
+                                    });
+
+                                    break;
+
+                                /*Fraksi PPP*/
+                                case 1:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent3 = new Intent(Data.this, Fraksi_PPP.class);
+                                            startActivity(intent3);
+                                        }
+                                    });
+
+                                    break;
+
+
+                                /*Fraksi DIP*/
+                                case 2:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent4 = new Intent(Data.this, Fraksi_DIP.class);
+                                            startActivity(intent4);
+                                        }
+                                    });
+
+                                    break;
+
+                                /*Fraksi Nasdem*/
+                                case 3:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent5 = new Intent(Data.this, Fraksi_Nasdem.class);
+                                            startActivity(intent5);
+                                        }
+                                    });
+
+                                    break;
+
+                                /*Fraksi IRKS*/
+                                case 4:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent6 = new Intent(Data.this, Fraksi_IRKS.class);
+                                            startActivity(intent6);
+                                        }
+                                    });
+
+                                    break;
+
+                                /*Fraksi Amanat Bintang Demokrasi*/
+                                case 5:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent6 = new Intent(Data.this, Fraksi_ABD.class);
+                                            startActivity(intent6);
+                                        }
+                                    });
+
+                                    break;
+
+
+
+                            }
+                        }
+
+                        @Override
+                        public void onNothingSelected(AdapterView<?> parent) { }
+                    });
                 }
 
                 /*Sub divisi komisi*/
                 if (position == 2) {
                     ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(Data.this, R.layout.spinner_item, isiKomisi);
                     spSubDivisi.setAdapter(adapter3);
-//                    spSubDivisi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//                        @Override
-//                        public void onItemSelected(AdapterView<?> parent, View view, int i, long id) {
-//                            switch (i) {
-//
-//                                /*Komisi I*/
-//                                case 0:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent7 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent7);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//                                /*Komisi II*/
-//                                case 1:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent8 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent8);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//
-//                                /*Komisi III*/
-//                                case 2:
-//                                    btCari = (Button) findViewById(R.id.cari);
-//                                    btCari.setOnClickListener(new View.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(View v) {
-//                                            Intent intent9 = new Intent(Beranda.this, MainActivity.class);
-//                                            startActivity(intent9);
-//                                        }
-//                                    });
-//
-//                                    break;
-//
-//
-//
-//                            }
-//                        }
-//
-//                        @Override
-//                        public void onNothingSelected(AdapterView<?> parent) { }
-//                    });
+                    spSubDivisi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                        @Override
+                        public void onItemSelected(AdapterView<?> parent, View view, int i, long id) {
+                            switch (i) {
+
+                                /*Komisi I*/
+                                case 0:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent7 = new Intent(Data.this, Komisi_I.class);
+                                            startActivity(intent7);
+                                        }
+                                    });
+
+                                    break;
+
+                                /*Komisi II*/
+                                case 1:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent8 = new Intent(Data.this, Komisi_II.class);
+                                            startActivity(intent8);
+                                        }
+                                    });
+
+                                    break;
+
+
+                                /*Komisi III*/
+                                case 2:
+                                    btCari = (Button) findViewById(R.id.cari);
+                                    btCari.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent intent9 = new Intent(Data.this, Komisi_III.class);
+                                            startActivity(intent9);
+                                        }
+                                    });
+
+                                    break;
+
+
+                            }
+                        }
+
+                        @Override
+                        public void onNothingSelected(AdapterView<?> parent) {
+                        }
+                    });
                 }
 
                 /*Sub divisi Alat Kelengkapan Dewan*/
@@ -316,7 +331,7 @@ public class Data extends Activity {
                                     break;
 
 
-                                /*AKD  legilasi*/
+                                /*AKD  pemperda*/
                                 case 2:
                                     btCari = (Button) findViewById(R.id.cari);
                                     btCari.setOnClickListener(new View.OnClickListener() {
@@ -354,9 +369,9 @@ public class Data extends Activity {
                 }
 
                 /*Sub partai*/
-                if (position == 4) {
-                    ArrayAdapter<String> adapter5 = new ArrayAdapter<String>(Data.this, R.layout.spinner_item, isiPartai);
-                    spSubDivisi.setAdapter(adapter5);
+//                if (position == 4) {
+//                    ArrayAdapter<String> adapter5 = new ArrayAdapter<String>(Data.this, R.layout.spinner_item, isiPartai);
+//                    spSubDivisi.setAdapter(adapter5);
 //                    spSubDivisi.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 //                        @Override
 //                        public void onItemSelected(AdapterView<?> parent, View view, int i, long id) {
@@ -428,11 +443,11 @@ public class Data extends Activity {
 //
 //                    });
 
-                }
+//                }
+//
+//            }
 
             }
-
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }

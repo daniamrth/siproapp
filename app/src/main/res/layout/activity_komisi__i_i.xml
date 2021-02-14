@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="#8ED2BF"
-    tools:context=".Akd_Kehormatan">
+    android:layout_height="match_parent"
+    tools:context=".Komisi_II">
 
     <LinearLayout
         android:weightSum="2"
@@ -22,7 +22,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/backBadKeh"
+                android:id="@+id/backk2"
                 android:layout_gravity="center"
                 android:background="@drawable/btback"
                 android:layout_width="25dp"
@@ -32,6 +32,7 @@
 
 
         <LinearLayout
+            android:orientation="vertical"
             android:paddingRight="85dp"
             android:gravity="center"
             android:layout_weight="0.4"
@@ -42,10 +43,11 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/roboto"
                 android:textColor="#FFFFFF"
-                android:text="Badan Kehormatan"
+                android:text="Komisi II"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
 
         </LinearLayout>
     </LinearLayout>
@@ -90,7 +92,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Ahmad Yani"/>
+                                android:text="Muhammad Rizkan, S.Sos, MA"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -114,7 +116,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mulyadi"/>
+                                android:text="Hafis Ansyari, S.Pd"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -140,9 +142,57 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Supianor"/>
+                                android:text="Rusdin Barhiwan"/>
 
                             <TextView
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sekertaris"/>
+                            />
+                        </TableRow>
+
+                        <!--    BARIS KE5    -->
+                        <TableRow>
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nur Fariani"/>
+
+                            <TextView
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                        </TableRow>
+
+                        <!--    BARIS KE6    -->
+                        <TableRow
+                            android:background="#F8F9FA"
+                            >
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bahrul Ilmi"/>
+
+                            <TextView
+                                android:paddingTop="10dp"
                                 android:paddingRight="8dp"
                                 android:textColor="#000000"
                                 android:gravity="right"
@@ -153,8 +203,53 @@
                             />
                         </TableRow>
 
+                        <!--    BARIS KE7    -->
+                        <TableRow>
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ahmad Fauzi, S.Hut"/>
 
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                        </TableRow>
 
+                        <TableRow
+                            android:background="#F8F9FA"
+                            >
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Supianor"/>
+
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anggota"/>
+                            />
+                        </TableRow>
 
 
                     </TableLayout>

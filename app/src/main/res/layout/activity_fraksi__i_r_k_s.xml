@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="#8ED2BF"
-    tools:context=".Akd_Kehormatan">
+    android:layout_height="match_parent"
+    tools:context=".Fraksi_IRKS">
 
     <LinearLayout
         android:weightSum="2"
@@ -22,7 +22,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/backBadKeh"
+                android:id="@+id/backirks"
                 android:layout_gravity="center"
                 android:background="@drawable/btback"
                 android:layout_width="25dp"
@@ -32,6 +32,7 @@
 
 
         <LinearLayout
+            android:orientation="vertical"
             android:paddingRight="85dp"
             android:gravity="center"
             android:layout_weight="0.4"
@@ -42,7 +43,16 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/roboto"
                 android:textColor="#FFFFFF"
-                android:text="Badan Kehormatan"
+                android:text="Fraksi Indonesia"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:textColor="#FFFFFF"
+                android:text="Raya Keadilan Sejahtera"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -90,7 +100,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Ahmad Yani"/>
+                                android:text="Syahbuddin, S.Sos.I"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -140,7 +150,31 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Supianor"/>
+                                android:text="Agus Reyanto"/>
+
+                            <TextView
+                                android:paddingRight="8dp"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sekertaris"/>
+                            />
+                        </TableRow>
+
+                        <TableRow
+
+                            >
+                            <TextView
+                                android:paddingTop="10dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hafis Ansyari, S.Pd"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -152,7 +186,6 @@
                                 android:text="Anggota"/>
                             />
                         </TableRow>
-
 
 
 

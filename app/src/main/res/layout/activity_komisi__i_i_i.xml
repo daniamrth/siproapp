@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:weightSum="2"
     android:layout_width="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#8ED2BF"
-    tools:context=".Akd_Anggaran">
+    tools:context=".Komisi_III">
 
     <LinearLayout
         android:weightSum="2"
@@ -22,7 +22,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/backBadAng"
+                android:id="@+id/backk3"
                 android:layout_gravity="center"
                 android:background="@drawable/btback"
                 android:layout_width="25dp"
@@ -32,6 +32,7 @@
 
 
         <LinearLayout
+            android:orientation="vertical"
             android:paddingRight="85dp"
             android:gravity="center"
             android:layout_weight="0.4"
@@ -42,10 +43,11 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/roboto"
                 android:textColor="#FFFFFF"
-                android:text="Badan Anggaran"
+                android:text="Komisi III"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
 
         </LinearLayout>
     </LinearLayout>
@@ -90,7 +92,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Ahsani Fauzan, SE"/>
+                                android:text="Hj. Erly Satriana, SE., S.Sos"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -99,7 +101,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pimpinan"/>
+                                android:text="Ketua"/>
                         </TableRow>
 
                         <!--    BARIS KE3    -->
@@ -114,7 +116,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="M. Ifdali, S.Sos"/>
+                                android:text="H. Usman M"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -123,7 +125,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pimpinan"/>
+                                android:text="Wakil Ketua"/>
                             />
                         </TableRow>
 
@@ -140,7 +142,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Sekertaris"/>
+                                android:text="Agus Reyanto"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -163,7 +165,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Ahmad Yani"/>
+                                android:text="Dimas Royandie, ST"/>
 
                             <TextView
                                 android:paddingRight="8dp"
@@ -187,7 +189,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="H. Dadang Idi Fajeri, S.Sos MM"/>
+                                android:text="Abi Yani"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -211,7 +213,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Hj. Sri Huriyati"/>
+                                android:text="Ahmad Yani"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -222,186 +224,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Anggota"/>
-                            />
                         </TableRow>
 
-                        <!--    BARIS KE8    -->
                         <TableRow
                             android:background="#F8F9FA"
                             >
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Supianor"/>
-
-                            <TextView
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE9    -->
-                        <TableRow>
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Hanil Tamjid"/>
-
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE10    -->
-                        <TableRow
-                            android:background="#F8F9FA"
-                            >
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Muhammad Rizkan, S.Sos., M.A"/>
-
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE11    -->
-                        <TableRow>
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="H. Rusdi Hsy, SE"/>
-
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE12    -->
-                        <TableRow
-                            android:background="#F8F9FA"
-                            >
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Syahbuddin, S.Sos. I, MM"/>
-
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE13    -->
-                        <TableRow>
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Mulyadi"/>
-
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE14    -->
-                        <TableRow
-                            android:background="#F8F9FA"
-                            >
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingLeft="8dp"
-                                android:textColor="#000000"
-                                android:layout_marginBottom="10dp"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Hj. Erly Satriana, SE.,S.Sos"/>
-
-                            <TextView
-                                android:paddingTop="10dp"
-                                android:paddingRight="8dp"
-                                android:textColor="#000000"
-                                android:gravity="right"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Anggota"/>
-                            />
-                        </TableRow>
-
-                        <!--    BARIS KE15    -->
-                        <TableRow>
                             <TextView
                                 android:paddingTop="10dp"
                                 android:paddingLeft="8dp"
@@ -424,10 +251,7 @@
                             />
                         </TableRow>
 
-                        <!--    BARIS KE16    -->
-                        <TableRow
-                            android:background="#F8F9FA"
-                            >
+                        <TableRow>
                             <TextView
                                 android:paddingTop="10dp"
                                 android:paddingLeft="8dp"
@@ -436,7 +260,7 @@
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Eddy Yulianto, S.Pd. M. AP"/>
+                                android:text="Hanil Tamjid"/>
 
                             <TextView
                                 android:paddingTop="10dp"
@@ -447,8 +271,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Anggota"/>
-                            />
                         </TableRow>
+
 
                     </TableLayout>
 
