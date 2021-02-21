@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#8ED2BF"
+    android:background="@drawable/berandaprofil"
     android:weightSum="2"
     android:orientation="vertical"
     android:layout_height="match_parent"
@@ -72,11 +72,11 @@
             android:layout_width="340dp"
             android:layout_height="185dp"/>
 
-        <Button
-            android:background="@drawable/pimpc"
-            android:id="@+id/pimp3"
-            android:layout_width="340dp"
-            android:layout_height="185dp"/>
+<!--        <Button-->
+<!--            android:background="@drawable/pimpc"-->
+<!--            android:id="@+id/pimp3"-->
+<!--            android:layout_width="340dp"-->
+<!--            android:layout_height="185dp"/>-->
 
     </LinearLayout>
 

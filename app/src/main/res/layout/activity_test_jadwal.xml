@@ -6,7 +6,7 @@
     android:weightSum="2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8ED2BF"
+    android:background="@drawable/berandaprofil"
     tools:context=".Test_jadwal">
 
     <LinearLayout
@@ -126,83 +126,129 @@
 
 
         <LinearLayout
-
-            android:orientation="vertical"
             android:background="#FFFFFF"
+            android:weightSum="2"
+            android:orientation="vertical"
             android:layout_weight="0.4"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="match_parent">
 
-            <ScrollView
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1.7"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:background="#F0F0F0"
+                    android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#7BCB9D"
+                        android:gravity="center"
+                        android:text="List Kegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+<LinearLayout
+    android:paddingTop="15dp"
+    android:layout_weight="0.3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
 
                     <LinearLayout
-
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:orientation="horizontal"
+                        android:orientation="vertical"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="left">
+                        android:layout_height="wrap_content">
 
 
+                            <TextView
 
-                        <TextView
-                            android:textColor="#000000"
-                            android:textSize="14dp"
-                            android:gravity="left"
-                            android:paddingLeft="5dp"
-                            android:paddingRight="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text=""
-                            android:id="@+id/jaddesc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                                android:textColor="#000000"
+                                android:textSize="14dp"
+                                android:gravity="left"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text=""
+                                android:id="@+id/jaddesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
 
-                        <TextView
-                            android:textColor="#000000"
-                            android:textSize="14dp"
-                            android:gravity="left"
-                            android:paddingLeft="5dp"
-                            android:paddingRight="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text=""
-                            android:id="@+id/jadwaktu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+<!--                            <TextView-->
+<!--                                android:textColor="#000000"-->
+<!--                                android:textSize="14dp"-->
+<!--                                android:gravity="left"-->
+<!--                                android:paddingLeft="10dp"-->
+<!--                                android:text=""-->
+<!--                                android:id="@+id/jadwaktu"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"/>-->
 
 
 
                     </LinearLayout>
 
 
-                </LinearLayout>
 
-            </ScrollView>
+
+
+
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
 
-<LinearLayout
+    </ScrollView>
+
+
+</LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
     android:gravity="center"
     android:layout_weight="1.2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
                 <Button
-                    android:background="@drawable/bt_loadjadwal_new"
+                    android:background="@drawable/btjadwal_new"
                     android:onClick="get_protected_data"
                     android:id="@+id/load2"
-                    android:layout_width="260dp"
-                    android:layout_height="45dp"/>
+                    android:layout_width="270dp"
+                    android:layout_height="48dp"/>
 
 </LinearLayout>
 

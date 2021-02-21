@@ -114,6 +114,8 @@ public class Data extends Activity {
 
                                         @Override
                                         public void onClick(View v) {
+
+                                            //HERE
                                             Intent intent1 = new Intent(Data.this, Pimpinan.class);
                                             startActivity(intent1);
                                         }

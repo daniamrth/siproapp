@@ -63,9 +63,9 @@
 
 
             <ImageView
-                android:background="@drawable/picpimb"
+                android:background="@drawable/picpimpc"
                 android:layout_width="168dp"
-                android:layout_height="193dp"/>
+                android:layout_height="200dp"/>
 
         </LinearLayout>
 
@@ -81,30 +81,30 @@
 
         <ImageView
             android:layout_marginBottom="15dp"
-            android:background="@drawable/pimpbnama"
+            android:background="@drawable/pimb_nama"
             android:layout_width="350dp"
             android:layout_height="40dp"/>
 
         <ImageView
             android:layout_marginBottom="15dp"
-            android:background="@drawable/pimpbjab"
+            android:background="@drawable/pimpbjabatan"
             android:layout_width="350dp"
             android:layout_height="40dp"/>
 
 
+<!--        <ImageView-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="@drawable/pimpbpdd"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="40dp"/>-->
+
+
+
         <ImageView
             android:layout_marginBottom="15dp"
-            android:background="@drawable/pimpbpdd"
+            android:background="@drawable/pimb_partai"
             android:layout_width="350dp"
             android:layout_height="40dp"/>
-
-
-
-        <ImageView
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/pimpbpartai"
-            android:layout_width="360dp"
-            android:layout_height="50dp"/>
 
 
         <ImageView

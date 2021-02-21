@@ -34,7 +34,7 @@ public class Pimpinan extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(Pimpinan.this, Pimp_a.class);
+                Intent intent2 = new Intent(Pimpinan.this, P_ifdali.class);
                 startActivity(intent2);
             }
 
@@ -46,24 +46,24 @@ public class Pimpinan extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(Pimpinan.this, Pimp_c.class);
+                Intent intent3 = new Intent(Pimpinan.this, P_ahsani.class);
                 startActivity(intent3);
             }
 
         });
 
 
-        //pimpinan tiga
-        btPimpC = (Button) findViewById(R.id.pimp3);
-        btPimpC.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent4 = new Intent(Pimpinan.this, Pimp_b.class);
-                startActivity(intent4);
-            }
-
-        });
+//        //pimpinan tiga
+//        btPimpC = (Button) findViewById(R.id.pimp3);
+//        btPimpC.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent4 = new Intent(Pimpinan.this, Pimp_b.class);
+//                startActivity(intent4);
+//            }
+//
+//        });
 
 
 

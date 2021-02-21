@@ -52,7 +52,7 @@ public class Test_jadwal extends Activity {
       jadDesc = findViewById(R.id.jaddesc);
      btLoad = findViewById(R.id.load2);
      btBackJadwal = findViewById(R.id.backJadwal);
-     jadWaktu = findViewById(R.id.jadwaktu);
+//     jadWaktu = findViewById(R.id.jadwaktu);
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         FirebaseAuth auth = FirebaseAuth.getInstance();
@@ -102,8 +102,18 @@ public class Test_jadwal extends Activity {
                                     + "\n" +vttanggal
                                     + "\n" +vtstart
                                     + "\n\n";
+
+//                            desc += vdesc
+//
+//                                    +"\n\n";
+//
+//                            waktu += vlocation
+//                                    +"\n" + vttanggal
+//                                    +"\n" + vtstart
+//                                     +"\n\n";
                         }
                         jadDesc.setText(desc);
+//                    jadWaktu.setText(waktu);
 
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
